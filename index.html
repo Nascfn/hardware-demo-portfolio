@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skerry One, a silent home server (concept)</title>
+  <meta name="description" content="Skerry One is a concept for a small, fanless home server in finned aluminium, for people who keep their own data. Join the waitlist.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__in">
+      <a class="wordmark" href="#top" aria-label="Skerry, home">Skerry</a>
+      <a class="btn btn--quiet" href="#waitlist">Waitlist</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero__in">
+        <div class="hero__text">
+          <h1>Your own silent server</h1>
+          <p class="lead">Skerry One keeps your files at home, fanless, in finned aluminium.</p>
+          <div class="hero__actions">
+            <a class="btn" href="#waitlist">Join the waitlist</a>
+            <a class="btn btn--quiet" href="#register">See the sample register</a>
+          </div>
+        </div>
+
+        <figure class="fig plate">
+          <div class="frame" data-enter>
+            <div class="print" data-slot="hero" data-alt="Skerry One photographed from directly above, a square-on plan view on a plain dark backdrop.">
+              <img src="images/plan.webp" width="1300" height="1300" alt="Skerry One seen from above, its top a field of aluminium fins" fetchpriority="high">
+            </div>
+            <ul class="dims dims--plan" aria-label="Sample dimensions, drawn to one scale">
+              <li class="dim dim--w"><span class="dim__line"></span><span class="dim__ends"></span><span class="dim__label num">W 200<span class="unit">mm</span><span class="dim__s">sample</span></span></li>
+              <li class="dim dim--v dim--d"><span class="dim__line"></span><span class="dim__ends"></span><span class="dim__label num">D 130<span class="unit">mm</span><span class="dim__s">sample</span></span></li>
+            </ul>
+          </div>
+          <figcaption><span class="num">01</span> <span>Plan view. Sample dimensions for a concept, to scale.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="register" id="register">
+      <div class="container">
+        <div class="cols head">
+          <h2>The sample register</h2>
+          <p class="lead">Every value here is a sample for a concept, not a specification.</p>
+        </div>
+        <div class="sheet" data-enter>
+          <table class="reg">
+            <colgroup><col class="c-no"><col class="c-item"><col></colgroup>
+            <thead>
+              <tr><th scope="col">No.</th><th scope="col">Item</th><th scope="col">Sample value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="no num">01</td><th scope="row">Processor</th><td class="val num">4-core, low-power class</td></tr>
+              <tr><td class="no num">02</td><th scope="row">Memory</th><td class="val num">16 GB</td></tr>
+              <tr><td class="no num">03</td><th scope="row">Storage bays</th><td class="val num">2 × M.2</td></tr>
+              <tr><td class="no num">04</td><th scope="row">Network</th><td class="val num">2.5 GbE</td></tr>
+              <tr><td class="no num">05</td><th scope="row">Power draw</th><td class="val num">8 W idle</td></tr>
+              <tr><td class="no num">06</td><th scope="row">Acoustic output</th><td class="val num">Fanless</td></tr>
+              <tr><td class="no num">07</td><th scope="row">Dimensions</th><td class="val num">200 × 130 × 55 mm</td></tr>
+              <tr><td class="no num">08</td><th scope="row">Mass</th><td class="val num">1.1 kg</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="views" id="views">
+      <div class="container">
+        <h2>Three views of one box</h2>
+        <div class="cols views__grid">
+          <figure class="fig fig--wide">
+            <div class="frame" data-enter>
+              <div class="print" data-slot="front" data-alt="Skerry One photographed square-on from the front on a plain dark backdrop.">
+                <img src="images/front.webp" width="2000" height="857" alt="Skerry One from the front, a low slab of finned aluminium" loading="lazy">
+              </div>
+              <ul class="dims dims--front" aria-label="Sample dimensions">
+                <li class="dim dim--w"><span class="dim__line"></span><span class="dim__ends"></span><span class="dim__label num">W 200<span class="unit">mm</span><span class="dim__s">sample</span></span></li>
+                <li class="dim dim--v dim--h"><span class="dim__line"></span><span class="dim__ends"></span><span class="dim__label num">H 55<span class="unit">mm</span><span class="dim__s">sample</span></span></li>
+              </ul>
+            </div>
+            <figcaption><span class="num">02</span> <span>Front elevation. One power control and no vents: the fins do the cooling.</span></figcaption>
+          </figure>
+          <figure class="fig fig--7">
+            <div class="frame" data-enter>
+              <div class="print" data-slot="rear" data-alt="The rear face of Skerry One, square-on, with its four ports in a row.">
+                <img src="images/rear.webp" width="1200" height="800" alt="The rear face of Skerry One with its row of four ports" loading="lazy">
+              </div>
+            </div>
+            <ol class="key key--4" aria-label="Ports, left to right">
+              <li>Power</li>
+              <li>Network</li>
+              <li>USB</li>
+              <li>USB</li>
+            </ol>
+            <figcaption><span class="num">03</span> <span>Rear face. Every port on one side, keyed left to right.</span></figcaption>
+          </figure>
+          <figure class="fig fig--5">
+            <div class="frame" data-enter>
+              <div class="print" data-slot="interior" data-alt="Skerry One from directly above with the lid off.">
+                <img src="images/interior.webp" width="1060" height="1007" alt="Inside Skerry One with the lid off: one board, a copper spreader, no fan" loading="lazy">
+              </div>
+            </div>
+            <ol class="key" aria-label="Parts inside, left to right">
+              <li>M.2 bays</li>
+              <li>Board</li>
+              <li>Copper spreader</li>
+            </ol>
+            <figcaption><span class="num">04</span> <span>Lid off. The spreader carries heat to the case. Nothing moves.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="envelope" id="envelope" aria-label="Outside dimensions, sample values">
+      <div class="container">
+        <p class="bigfig"><span class="bigfig__n">200 × 130 × 55</span> <span class="bigfig__u num">mm, sample</span></p>
+        <ol class="chain" data-enter aria-label="Width, depth and height to one scale">
+          <li class="num">W 200<span class="unit">mm</span></li>
+          <li class="num">D 130<span class="unit">mm</span></li>
+          <li class="num">H 55<span class="unit">mm</span></li>
+        </ol>
+        <p class="envelope__note">The whole envelope on one string. Sample values for a concept.</p>
+      </div>
+    </section>
+
+    <section class="stays" id="stays">
+      <div class="container">
+        <h2>What stays where</h2>
+        <div class="cmp-wrap" data-enter>
+          <table class="cmp">
+            <colgroup><col><col><col></colgroup>
+            <thead>
+              <tr><td></td><th scope="col">On your shelf</th><th scope="col">In rented storage</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">The disks</th><td data-col="On your shelf">In your home, within reach.</td><td data-col="In rented storage">In someone else’s building.</td></tr>
+              <tr><th scope="row">The keys</th><td data-col="On your shelf">Made and kept on the box.</td><td data-col="In rented storage">Handled as the provider decides.</td></tr>
+              <tr><th scope="row">The terms</th><td data-col="On your shelf">Yours. Nothing to accept.</td><td data-col="In rented storage">Theirs, and they can change.</td></tr>
+              <tr><th scope="row">If you stop paying</th><td data-col="On your shelf">Nothing. You own it.</td><td data-col="In rented storage">Your files have to move.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="waitlist" id="waitlist">
+      <div class="container">
+        <h2>Put your name on the sheet</h2>
+        <div class="cols waitlist__grid">
+          <figure class="fig">
+            <div class="frame" data-enter>
+              <div class="print" data-slot="shelf" data-alt="Skerry One lying on a wooden bookshelf between two rows of paperbacks.">
+                <img src="images/shelf.webp" width="1056" height="594" alt="Skerry One on a bookshelf between paperbacks" loading="lazy">
+              </div>
+            </div>
+            <figcaption><span class="num">05</span> <span>On a shelf, between paperbacks.</span></figcaption>
+          </figure>
+          <form class="tb" data-endpoint="" novalidate>
+            <dl class="tb__facts">
+              <div><dt>Sheet</dt><dd>Waitlist</dd></div>
+              <div><dt>Product</dt><dd>Skerry One</dd></div>
+              <div><dt>Status</dt><dd>Concept</dd></div>
+            </dl>
+            <div class="tb__fields">
+              <div class="field">
+                <label for="wl-name">Name (optional)</label>
+                <input id="wl-name" name="name" type="text" autocomplete="name">
+              </div>
+              <div class="field">
+                <label for="wl-email">Email address (required)</label>
+                <input id="wl-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-required="true">
+              </div>
+            </div>
+            <div class="tb__foot">
+              <p class="tb__help" id="wl-help" aria-live="polite">The waitlist is not connected in this concept. Nothing is sent.</p>
+              <button class="btn" type="submit">Join the waitlist</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="container">
+      <p class="statement">Keep your data where you can touch it.</p>
+      <ul class="foot__links">
+        <li><a href="#register">The sample register</a></li>
+        <li><a href="#views">Three views</a></li>
+        <li><a href="#stays">What stays where</a></li>
+        <li><a href="#waitlist">The waitlist</a></li>
+      </ul>
+      <p class="foot__note">A concept site. Skerry and Skerry One are invented, and nothing here is for sale.</p>
+    </div>
+  </footer>
+
+  <script>document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
