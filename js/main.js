@@ -4,6 +4,7 @@ document.querySelectorAll('form[data-endpoint]').forEach((form) => {
   const email = form.querySelector('input[type="email"]');
   const help = form.querySelector('[aria-live]');
   const button = form.querySelector('button[type="submit"]');
+  const helpDefault = help.textContent;
 
   const check = () => {
     const ok = email.checkValidity();
@@ -12,7 +13,7 @@ document.querySelectorAll('form[data-endpoint]').forEach((form) => {
     return ok;
   };
 
-  email.addEventListener('input', () => { if (email.hasAttribute('aria-invalid')) check(); });
+  email.addEventListener('input', () => { if (email.hasAttribute('aria-invalid') && check()) help.textContent = helpDefault; });
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -39,8 +40,19 @@ document.querySelectorAll('form[data-endpoint]').forEach((form) => {
 (() => {
   const els = document.querySelectorAll('[data-enter]');
   if (!('IntersectionObserver' in window)) { els.forEach((el) => el.classList.add('is-in')); return; }
+  const show = (el) => { el.classList.add('is-in'); io.unobserve(el); };
   const io = new IntersectionObserver((entries) => entries.forEach((e) => {
-    if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
-  }), { rootMargin: '0px 0px -12% 0px', threshold: 0.15 });
+    if (e.isIntersecting) show(e.target);
+  }), { rootMargin: '0px 0px -16px 0px', threshold: 0 });
   els.forEach((el) => io.observe(el));
+  // anything already on screen after a load, a reload or a jump to an anchor shows at once
+  const inView = () => els.forEach((el) => {
+    if (el.classList.contains('is-in')) return;
+    const b = el.getBoundingClientRect();
+    if (b.bottom > 0 && b.top < innerHeight && b.width) show(el);
+  });
+  inView();
+  addEventListener('load', inView);
+  addEventListener('pageshow', inView);
+  addEventListener('hashchange', () => requestAnimationFrame(inView));
 })();
